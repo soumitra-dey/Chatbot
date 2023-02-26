@@ -4,6 +4,7 @@ const axios = require("axios")
 require("dotenv").config()
 
 
+// to create a card
 const createcard = async(msg) => {
     const user = await UserModel.findOne({chat_id:msg.chat.id})
     try{
@@ -32,6 +33,7 @@ const createcard = async(msg) => {
 }
 
 
+// to change a card name
 const updatecardname = async(msg) => {
     const user = await UserModel.findOne({chat_id:msg.chat.id})
     try{
@@ -71,6 +73,7 @@ const updatecardname = async(msg) => {
 }
 
 
+// to change one list to another list
 const updatecardlist = async(msg) => {
     const user = await UserModel.findOne({chat_id:msg.chat.id})
     try{
@@ -109,6 +112,7 @@ const updatecardlist = async(msg) => {
     }
 }
 
+// to delete a card
 const deletecard = async(msg) => {
     const user = await UserModel.findOne({chat_id:msg.chat.id})
     try{

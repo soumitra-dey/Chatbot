@@ -11,6 +11,7 @@ Wellcome to TrelloBot
     bot.sendMessage(msg.chat.id,reply);
 }
 
+// help tray
 const helpreply = (msg) => {
     let reply=`
 /// For authentication
@@ -43,6 +44,7 @@ delete card- /deletecard/{list name}/{card name}
     bot.sendMessage(msg.chat.id,reply)
 }
 
+// for signup
 const botsignup = async(msg) => {
     let data=msg.text.split("/")
 
@@ -60,6 +62,7 @@ const botsignup = async(msg) => {
     }
 }
 
+// for login
 const botlogin = async(msg) => {
     let data=msg.text.split("/")
 
@@ -80,6 +83,7 @@ const botlogin = async(msg) => {
     }
 }
 
+// for logout
 const botlogout = async(msg) => {
     const user=await UserModel.findOne({chat_id:msg.chat.id})
     try{

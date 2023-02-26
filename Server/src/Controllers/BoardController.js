@@ -3,6 +3,7 @@ const UserModel = require("../Models/user.model");
 const axios = require("axios");
 require("dotenv").config();
 
+// to create a board
 const createboard = async (msg) => {
   const user = await UserModel.findOne({ chat_id: msg.chat.id });
   try {
@@ -43,6 +44,7 @@ const createboard = async (msg) => {
   }
 };
 
+// to view all lists and cards
 const viewboard = async (msg) => {
   const user = await UserModel.findOne({ chat_id: msg.chat.id });
   try {
@@ -78,6 +80,7 @@ const viewboard = async (msg) => {
   }
 };
 
+// to update a board
 const updateboard = async (msg) => {
   const user = await UserModel.findOne({ chat_id: msg.chat.id });
   try {
@@ -102,6 +105,7 @@ const updateboard = async (msg) => {
   }
 };
 
+// to delete a board
 const deleteboard = async (msg) => {
   const user = await UserModel.findOne({ chat_id: msg.chat.id });
   try {

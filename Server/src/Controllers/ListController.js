@@ -3,6 +3,7 @@ const UserModel = require("../Models/user.model");
 const axios = require("axios");
 require("dotenv").config();
 
+// create a list
 const createlist = async(msg) => {
     const user = await UserModel.findOne({chat_id:msg.chat.id})
     try{
@@ -26,6 +27,7 @@ const createlist = async(msg) => {
     }
 }
 
+// to view all list
 const viewlist = async(msg) => {
     const user = await UserModel.findOne({chat_id:msg.chat.id})
     try{
@@ -45,6 +47,7 @@ const viewlist = async(msg) => {
     }
 }
 
+// to update a list
 const updatelist = async(msg) => {
     const user = await UserModel.findOne({chat_id:msg.chat.id})
     try{
@@ -69,6 +72,7 @@ const updatelist = async(msg) => {
     }
 }
 
+// to delete a list
 const deletelist = async(msg) => {
     const user = await UserModel.findOne({chat_id:msg.chat.id})
     try{
