@@ -8,6 +8,7 @@
 * [Click Here](https://t.me/TrellforallBot/) to view the bot on Telegram.
 
 * Backend deployed link- https://hollow-mighty-goat.glitch.me
+(Before using telegram please wake up my server one time, because it deployed on glitch so after few time it goes to sleep mode)
 
 
 
