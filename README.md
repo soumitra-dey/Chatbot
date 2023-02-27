@@ -38,3 +38,8 @@
     - update card list- /updatecardlist/{old list name}/{card name}/{new list name}
     - delete card- /deletecard/{list name}/{card name}
 
+## Screenshots
+
+* ![App Screenshot](https://i.ibb.co/hLnBYKs/Screenshot-from-2023-02-27-13-21-27.png)
+
+* ![App Screenshot](https://i.ibb.co/NK2JYFG/Screenshot-from-2023-02-27-13-21-00.png)
